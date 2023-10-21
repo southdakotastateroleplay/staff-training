@@ -35,14 +35,14 @@ header h1 {
 
 /* Page title */
 .page-title {
-    font-size: 24px;
+    font-size: 28px; /* Increased font size */
     margin-bottom: 20px;
     text-align: center;
 }
 
 /* Date and time section */
 .date-time {
-    font-size: 20px;
+    font-size: 24px; /* Increased font size */
     text-align: center;
     color: #007bff;
     margin-bottom: 20px;
