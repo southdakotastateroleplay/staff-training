@@ -8,6 +8,7 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #d2b48c; /* Lightish brown background color */
+    color: #333;
 }
 
 /* Header styles */
@@ -20,13 +21,12 @@ header {
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 10px;
 }
 
 /* Main content container */
 .container {
-    max-width: 960px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -37,11 +37,14 @@ header h1 {
 .page-title {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Date and time section */
 .date-time {
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
+    color: #007bff;
     margin-bottom: 20px;
 }
 
@@ -53,10 +56,6 @@ header h1 {
 }
 
 /* Form styles */
-form {
-    margin-top: 20px;
-}
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -67,8 +66,7 @@ form label {
     margin-bottom: 5px;
 }
 
-form input[type="text"],
-form input[type="email"] {
+form input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -77,19 +75,28 @@ form input[type="email"] {
 }
 
 /* Checkbox styles */
-form input[type="checkbox"] {
-    margin-right: 5px;
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 /* Register button styles */
 .register-button {
-    display: inline-block;
+    display: block;
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
+    margin: 20px auto;
+    display: block;
+    width: 50%;
     transition: background-color 0.3s;
 }
 
@@ -103,23 +110,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .page-title {
-        font-size: 20px;
-    }
-
-    .description {
-        font-size: 14px;
-    }
 }
