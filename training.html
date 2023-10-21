@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDSRP Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SDSRP Training</h1>
+    </header>
+    <div class="container">
+        <h2 class="page-title">Next Training Date</h2>
+        <div class="date-time">
+            <p style="font-size: 32px; color: #ff6600;">Wednesday, October 25th</p>
+        </div>
+        <p class="description">Join us for our next training session and enhance your skills and knowledge. Don't miss this opportunity to learn from industry experts.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+                <label>Roblox Username <input type="text" name="roblox-username" required /></label>
+            </p>
+            <p>
+                <label>Will you be attending this training date?</label>
+                <input type="checkbox" name="attending-training" value="Yes" id="attending-yes">
+                <label for="attending-yes">Yes</label>
+                <input type="checkbox" name="attending-training" value="No" id="attending-no">
+                <label for="attending-no">No</label>
+            </p>
+            <p>
+                <button type="submit" class="register-button">Submit</button>
+            </p>
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 SDSRP Training. All rights reserved.
+    </footer>
+</body>
+</html>
